@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'montserratalt1';
+    src: url('../assets/fonts/montserrat/MontserratAlt1-Regular.woff') format('woff2'),
+         url('../assets/fonts/montserrat/MontserratAlt1-Regular.woff2') format('woff');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'montserratalt1Bold';
+    src: url('../assets/fonts/montserrat/MontserratAlt1-Bold.woff2') format('woff2'),
+         url('../assets/fonts/montserrat/MontserratAlt1-Bold.woff') format('woff');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  
