@@ -51,7 +51,7 @@ export const HomePage = () => {
             que <br />
             ofrecemos en NEA Dynamics, hacé clic en el botón de abajo.
           </p>
-          <Button className="p-4 uppercase bg-sky-700 text-white" >Conocé más</Button>
+          <Button className="p-4 uppercase bg-green-700 text-white" >Conocé más</Button>
         </div>
       </section>
       <section className="p-10 grid place-items-center space-y-5">

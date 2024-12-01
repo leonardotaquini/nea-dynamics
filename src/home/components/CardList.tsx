@@ -1,4 +1,4 @@
-import { CardItem } from "@/components/CardItem";
+import { CardItem } from "@/home/components/CardItem";
 import Foto3 from "@/assets/images/foto03.webp";
 import Foto7 from "@/assets/images/foto07.webp";
 import Pbc from "@/assets/images/pcb.webp";

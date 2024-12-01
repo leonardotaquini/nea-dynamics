@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "./shadcn/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/shadcn/ui/card";
 
 interface CardItemProps {
   title: string;
@@ -23,11 +23,11 @@ export const CardItem = ({ title, content, image, end }: CardItemProps) => {
         }`}
       >
         <CardHeader>
-          <CardTitle className="text-center text-2xl font-mono">
+          <CardTitle className="text-center text-2xl font-mono text-white rounded p-3" style={{backgroundColor:'#243579'}}>
             {title}
           </CardTitle>
         </CardHeader>
-        <CardContent className="leading-loose text-start sm:text-justify text-slate-500">
+        <CardContent className=" text-justify text-slate-500 h-full xl:text-lg" style={{lineHeight:'45px'}}>
           <p>{content}</p>
         </CardContent>
       </div>

@@ -30,7 +30,7 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({ text, speed = 50
       {displayedText}
       <motion.span
         animate={{ opacity: [0, 1, 0] }}
-        transition={{ repeat: Infinity, duration: 0.4 }}
+        transition={{ repeat: Infinity, duration: 0.5 }}
 
       >
         &nbsp;

@@ -105,7 +105,7 @@ export const Formulario = () => {
             </FormItem>
           )}
         />
-        <Button className="p-4 uppercase bg-sky-700 text-white w-full" type="submit">Enviar</Button>
+        <Button className="p-4 uppercase bg-green-700 text-white w-full" type="submit">Enviar</Button>
       </form>
     </Form>
   )

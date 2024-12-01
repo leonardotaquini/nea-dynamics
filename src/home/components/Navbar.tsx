@@ -12,9 +12,9 @@ export const Navbar = () => {
             <MenuIcon className=" text-slate-100 min-h-8 min-w-8"/>
         </Button>
         </SheetTrigger>
-        <SheetContent className="bg-slate-900 border-none text-white">
+        <SheetContent className="bg-slate-900 border-none text-white flex flex-col justify-between">
           <SheetHeader>
-            <SheetTitle className="title text-center text-white">Nea Dynamics</SheetTitle>
+            <SheetTitle className="title text-center text-white">NEA DYNAMICS</SheetTitle>
             <SheetDescription className="text-slate-300">
             Automatizando el presente, transformando el futuro 
             </SheetDescription>
@@ -30,6 +30,7 @@ export const Navbar = () => {
                 <Link to='/' className="text-2xl hover:text-cyan-700">Servicios</Link>
             </li>
           </ul>
+          <p className="text-center text-muted-foreground">© NEA Dynamics. All rights reserved.</p>
         </SheetContent>
       </Sheet>
     </>
