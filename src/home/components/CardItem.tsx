@@ -12,10 +12,14 @@ export const CardItem = ({ title, content, image, end }: CardItemProps) => {
     <Card className="grid grid-cols-12 col-span-12 sm:w-3/4">
       <div
         className={`col-span-12 sm:col-span-6 ${
-          end ? "sm:order-2" : "sm:order-1 "
+          end ? "sm:order-2" : "sm:order-1"
         }`}
       >
-        <img src={image} className="h-full object-cover" />
+        <img
+          src={image}
+          className="h-full object-cover transform transition-transform duration-300 hover:scale-105"
+          alt={title}
+        />
       </div>
       <div
         className={`col-span-12 sm:col-span-6 ${
@@ -23,11 +27,17 @@ export const CardItem = ({ title, content, image, end }: CardItemProps) => {
         }`}
       >
         <CardHeader>
-          <CardTitle className="text-center text-2xl font-mono text-white rounded p-3" style={{backgroundColor:'#243579'}}>
+          <CardTitle
+            className="text-center text-2xl font-mono text-white rounded p-3"
+            style={{ backgroundColor: "#243579" }}
+          >
             {title}
           </CardTitle>
         </CardHeader>
-        <CardContent className=" text-justify text-slate-500 h-full xl:text-lg" style={{lineHeight:'45px'}}>
+        <CardContent
+          className="sm:text-justify text-slate-500 h-full xl:text-lg"
+          style={{ lineHeight: "35px" }}
+        >
           <p>{content}</p>
         </CardContent>
       </div>

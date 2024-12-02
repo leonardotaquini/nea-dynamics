@@ -27,10 +27,10 @@ export const Navbar = () => {
                 <Link to='/' className="text-2xl hover:text-cyan-700">Nosotros</Link>
             </li>
             <li className="text-center">
-                <Link to='/' className="text-2xl hover:text-cyan-700">Servicios</Link>
+                <Link to='/services' className="text-2xl hover:text-cyan-700">Servicios</Link>
             </li>
           </ul>
-          <p className="text-center text-muted-foreground">© NEA Dynamics. All rights reserved.</p>
+          <p className="text-center text-muted text-gray-300 text-sm">© NEA Dynamics. All rights reserved.</p>
         </SheetContent>
       </Sheet>
     </>

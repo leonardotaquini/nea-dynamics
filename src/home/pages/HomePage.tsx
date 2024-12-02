@@ -5,24 +5,25 @@ import { CardList } from "../components/CardList";
 import { Button } from "@/components/shadcn/ui/button";
 import { Formulario } from "../components/Formulario";
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 export const HomePage = () => {
   return (
     <>
       <div className="main-container flex flex-col">
         <Navbar />
-        <main className="flex flex-col m-auto mt-10">
+        <main className="flex flex-col m-auto ">
           <section className="text-white flex flex-col justify-center items-center space-y-4">
             <img
               src={Logo}
               alt="Nea Dynamics Logo"
-              className="rounded-full w-72"
+              className="rounded-full w-56"
             />
             <h1 className="text-3xl sm:text-6xl text-center title ">
               NEA DYNAMICS
             </h1>
             <TypewriterText
-              className="text-center px-2 text-lg sm:text-2xl text-gray-200"
+              className="text-center px-2 text-sm sm:text-2xl text-gray-200"
               text="Automatizando el presente, transformando el futuro"
             />
           </section>
@@ -33,7 +34,7 @@ export const HomePage = () => {
       </div>
       <section className="grid place-items-center">
         <div className="border border-l-0 border-r-0 w-fit p-10 m-5">
-          <p className="text-4xl text-center text-gray-500 font-light">
+          <p className="text-3xl text-center text-gray-500 font-light">
             Transformamos desafíos en oportunidades <br />
             mediante soluciones de automatización <br />
             inteligentes y personalizadas
@@ -59,6 +60,7 @@ export const HomePage = () => {
         <p className="text-gray-500 text-center">Si querés que nos pongamos en contacto con vos para obtener mas información, completá el siguiente formulario.</p>
         <Formulario />
       </section>
+      <Footer />
     </>
   );
 };
