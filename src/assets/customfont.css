@@ -13,4 +13,12 @@
     font-weight: 700; /* Bold */
     font-style: normal;
   }
-  
+
+
+  @font-face {
+     font-family: 'montserratalt2Bold';
+     src: url('../assets/fonts/montserrat/MontserratAlt1-SemiBold.woff2') format('woff2'),
+          url('../assets/fonts/montserrat/MontserratAlt1-SemiBold.woff') format('woff');
+     font-weight: 700; /* Bold */
+     font-style: normal;
+   }

@@ -11,13 +11,18 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({ text, speed = 50
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
-    setDisplayedText("");
+    setDisplayedText(""); // Reset text
 
-    const timeoutIds = text.split("").map((_, i) =>
-      setTimeout(() => setDisplayedText((prev) => prev + text[i]), i * speed)
-    );
+    let index = 0;
+    const intervalId = setInterval(() => {
+      setDisplayedText((prev) => prev + text[index]);
+      index++;
+      if (index === text.length) {
+        clearInterval(intervalId);
+      }
+    }, speed);
 
-    return () => timeoutIds.forEach((id) => clearTimeout(id));
+    return () => clearInterval(intervalId);
   }, [text, speed]);
 
   return (
@@ -31,7 +36,6 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({ text, speed = 50
       <motion.span
         animate={{ opacity: [0, 1, 0] }}
         transition={{ repeat: Infinity, duration: 0.5 }}
-
       >
         &nbsp;
       </motion.span>

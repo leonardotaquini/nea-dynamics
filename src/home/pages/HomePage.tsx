@@ -1,36 +1,24 @@
-import Logo from "@/assets/loguitov2.png";
-import Triangle from "@/assets/top-3200.svg";
-import { TypewriterText } from "@/components/TypewriterText";
-import { CardList } from "../components/CardList";
+import { CardList } from "../../about/components/CardList";
 import { Button } from "@/components/shadcn/ui/button";
-import { Formulario } from "../components/Formulario";
-import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { Link } from "react-router-dom";
+import { Header } from "../components/Header";
+import { useRef } from "react";
+import { Navbar } from "../components/Navbar";
 
 export const HomePage = () => {
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const handleScroll = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="main-container flex flex-col">
-        <Navbar />
-        <main className="flex flex-col m-auto ">
-          <section className="text-white flex flex-col justify-center items-center space-y-4">
-            <img
-              src={Logo}
-              alt="Nea Dynamics Logo"
-              className="rounded-full w-56"
-            />
-            <h1 className="text-3xl sm:text-6xl text-center title ">
-              NEA DYNAMICS
-            </h1>
-            <TypewriterText
-              className="text-center px-2 text-sm sm:text-2xl text-gray-200"
-              text="Automatizando el presente, transformando el futuro"
-            />
-          </section>
-        </main>
-        <section>
-          <img src={Triangle} />
-        </section>
+        <Navbar handleScroll={ handleScroll } />
+        <Header />
       </div>
       <section className="grid place-items-center">
         <div className="border border-l-0 border-r-0 w-fit p-10 m-5">
@@ -41,7 +29,7 @@ export const HomePage = () => {
           </p>
         </div>
       </section>
-      <section className="p-10">
+      <section className="p-10" id="about" ref={aboutRef}>
         <CardList />
       </section>
       <section className="grid place-items-center">
@@ -52,13 +40,10 @@ export const HomePage = () => {
             que <br />
             ofrecemos en NEA Dynamics, hacé clic en el botón de abajo.
           </p>
-          <Button className="p-4 uppercase bg-green-700 text-white" >Conocé más</Button>
+          <Button className="p-4 uppercase bg-green-700 text-white">
+            <Link to="/services">Conocé más</Link>
+          </Button>
         </div>
-      </section>
-      <section className="p-10 grid place-items-center space-y-5">
-        <h3 className="text-2xl">¡Contactanos!</h3>
-        <p className="text-gray-500 text-center">Si querés que nos pongamos en contacto con vos para obtener mas información, completá el siguiente formulario.</p>
-        <Formulario />
       </section>
       <Footer />
     </>

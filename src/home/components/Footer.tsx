@@ -48,7 +48,7 @@ export const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-gray-700 pt-4">
+      <div className="border-t border-gray-700 pt-4 px-2">
         <p className="text-center text-sm ">
           © {currentYear} <span className="font-semibold">NEA Dynamics</span>. Todos los derechos reservados.
         </p>
