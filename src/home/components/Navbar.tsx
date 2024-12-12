@@ -58,6 +58,15 @@ export const Navbar = ({ handleScroll }: NavbarProps) => {
               Nosotros
             </Link>
           </li>
+          <li className="text-center">
+            <Link
+              to="/contact"
+              className="text-2xl hover:text-cyan-700"
+              onClick={() => setIsOpen(false)} 
+            >
+              Contacto
+            </Link>
+          </li>
         </ul>
         <p className="text-center text-muted text-gray-300 text-sm">
           © NEA Dynamics. All rights reserved.

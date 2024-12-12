@@ -1,3 +1,4 @@
+import { ContactPage } from "@/contact/pages/ContactPage"
 import { HomePage } from "@/home/pages/HomePage"
 import { ServicesPage } from "@/services/pages/ServicesPage"
 import { Route, Routes } from "react-router-dom"
@@ -7,6 +8,7 @@ export const AppRoutes = () => {
     <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path='/services' element={<ServicesPage />} />
+        <Route path='/contact' element={<ContactPage />} />
     </Routes>
   )
 }
