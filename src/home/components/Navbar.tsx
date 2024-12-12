@@ -51,7 +51,7 @@ export const Navbar = ({ handleScroll }: NavbarProps) => {
           </li>
           <li className="text-center">
             <Link
-              to=""
+              to="/"
               className="text-2xl hover:text-cyan-700"
               onClick={handleAboutClick} 
             >

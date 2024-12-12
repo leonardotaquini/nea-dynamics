@@ -52,7 +52,7 @@ export const Formulario = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full sm:w-1/2 shadow-xl rounded p-5">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full xl:w-1/2 shadow-xl rounded p-5">
         <FormField
           control={form.control}
           name="name"
