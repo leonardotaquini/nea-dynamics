@@ -2,6 +2,7 @@ import { Card } from "@/components/shadcn/ui/card";
 import { NavbarUI } from "@/components/ui/NavbarUI";
 import { useAppStore } from "@/store/app.store";
 import { ArrowLeft, CheckCircle } from "lucide-react";
+import { useEffect } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 
 export const Service = () => {
@@ -12,12 +13,16 @@ export const Service = () => {
     return <Navigate to="/services" />;
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
       <NavbarUI />
       <ArrowLeft className="w-8 h-8 m-4 cursor-pointer" onClick={ ()=> navigate('/services')} />
       <main className="flex-grow grid grid-cols-12 shadow">
-        <section className="col-span-12 h-full sm:col-span-6 order-2 sm:flex flex-col items-center justify-center">
+        <section className="col-span-12 h-full sm:col-span-6 order-2 hidden sm:flex flex-col items-center justify-center">
           <img
             src={serviceSelected?.imageUrl}
             alt="service"

@@ -16,9 +16,9 @@ export const HomePage = () => {
       <section className="grid place-items-center">
         <div className="border border-l-0 border-r-0 w-fit p-10 m-5 bg-gray-100 rounded-xl">
           <p className="text-3xl text-center text-gray-600 font-light">
-            "Transformamos desafíos en oportunidades <br />
+            Transformamos desafíos en oportunidades <br />
             mediante soluciones de automatización <br />
-            inteligentes y personalizadas"
+            inteligentes y personalizadas
           </p>
         </div>
       </section>
