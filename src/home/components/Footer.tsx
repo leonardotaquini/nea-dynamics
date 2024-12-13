@@ -19,8 +19,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-8">
-      {/* Social Media Icons */}
+    <footer className="bg-slate-900 text-white py-8 mt-2">
       <div className="flex justify-center space-x-6 mb-6">
         <FaWhatsapp
           className="text-3xl text-green-500 cursor-pointer hover:text-green-400 transition duration-200"
@@ -40,15 +39,13 @@ export const Footer = () => {
         />
       </div>
 
-      {/* Contact Information */}
       <div className="text-center space-y-2 mb-6">
-        <p className="text-gray-400">Formosa, Argentina</p>
-        <p className="text-gray-400">Cel: +54 9 370-5183469</p>
-        <p className="text-gray-400">Email: <a href="mailto:nea.dynamics@gmail.com" className="underline hover:text-gray-300">nea.dynamics@gmail.com</a></p>
+        <p className="text-gray-200">Formosa, Argentina</p>
+        <p className="text-gray-200">Cel: +54 9 370-5183469</p>
+        <p className="text-gray-200">Email: <a href="mailto:nea.dynamics@gmail.com" className="underline hover:text-gray-300">nea.dynamics@gmail.com</a></p>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="border-t border-gray-700 pt-4 px-2">
+      <div className="border-t border-gray-500 pt-8 px-2 ">
         <p className="text-center text-sm ">
           © {currentYear} <span className="font-semibold">NEA Dynamics</span>. Todos los derechos reservados.
         </p>

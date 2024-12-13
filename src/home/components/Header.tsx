@@ -1,19 +1,19 @@
 import { useTypewriter, Cursor  } from 'react-simple-typewriter'
 import Logo from "@/assets/loguitov2.png";
 import Triangle from "@/assets/top-3200.svg";
+import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const Header = () => {
-
+    const navigate = useNavigate();
     const [ text ] = useTypewriter({
         words:['Automatizando el presente', 'Transformando el futuro'],
         loop: true,
-      })
-    
-
+      });
   return (
     <>
 
-        <main className="flex flex-col m-auto ">
+        <main className="flex flex-col m-auto space-y-8">
           <section className="text-white flex flex-col justify-center items-center space-y-4">
             <img
               src={Logo}
@@ -28,6 +28,11 @@ export const Header = () => {
               <Cursor cursorColor="white" />
             </span>
           </section>
+        <ArrowRight 
+          className="text-white m-auto animate-pulse cursor-pointer" 
+          size={32} 
+          onClick={ () => navigate('/services') }
+          />
         </main>
         <section>
           <img src={Triangle} />

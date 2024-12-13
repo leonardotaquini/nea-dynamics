@@ -3,18 +3,11 @@ import { MenuIcon } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-interface NavbarProps {
-  handleScroll?: () => void;
-}
 
 
-export const Navbar = ({ handleScroll }: NavbarProps) => {
+
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleAboutClick = () => {
-    setIsOpen(false); 
-    setTimeout(() => handleScroll!(), 300); 
-  };
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -51,9 +44,9 @@ export const Navbar = ({ handleScroll }: NavbarProps) => {
           </li>
           <li className="text-center">
             <Link
-              to="/"
+              to="/about"
               className="text-2xl hover:text-cyan-700"
-              onClick={handleAboutClick} 
+              onClick={() => setIsOpen(false)} 
             >
               Nosotros
             </Link>
