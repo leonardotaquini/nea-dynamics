@@ -39,7 +39,6 @@ export const Service = () => {
           </span>
           {(serviceSelected?.features !== null && serviceSelected?.features?.length! > 0 ) && (
             <>
-              {/* <h3 className="font-medium text-blue-900">Funcionalidades:</h3> */}
               <ul className="leading-loose ">
                 {serviceSelected?.features.map((feature, index) => (
                   <li key={index} className="flex flex-col justify-center items-start">
@@ -53,7 +52,7 @@ export const Service = () => {
               </ul>
             </>
           )}
-          <span className="text-justify px-4 leading-loose">
+          <span className="text-justify px-4 pb-4 leading-loose">
             {serviceSelected?.motivation}
           </span>
         </Card>

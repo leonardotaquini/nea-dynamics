@@ -15,11 +15,11 @@ export const CardItem = ({ title, content, image, end }: CardItemProps) => {
           end ? "sm:order-2" : "sm:order-1"
         }`}
       >
-        <img
-          src={image}
-          className="h-full object-cover transform transition-transform duration-300 hover:scale-105"
-          alt={title}
-        />
+          <img
+            src={image}
+            className="h-full object-cover transform transition-transform duration-300 hover:scale-105"
+            alt={title}
+          />
       </div>
       <div
         className={`col-span-12 sm:col-span-6 ${

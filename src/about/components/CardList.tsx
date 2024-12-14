@@ -2,7 +2,6 @@ import { CardItem } from "@/about/components/CardItem";
 import Foto3 from "@/assets/images/foto03_11zon.webp";
 import Foto7 from "@/assets/images/foto07_11zon.webp";
 import Pbc from "@/assets/images/pcb_11zon.webp";
-
 interface AboutInfo {
   title: string;
   content: string;
@@ -37,13 +36,13 @@ export const CardList = () => {
     <>
       <div className="grid grid-cols-12 place-items-center px-2">
         {aboutInfo.map((info, index) => (
-          <CardItem
-            key={index}
-            title={info.title}
-            content={info.content}
-            image={info.image}
-            end={info.end}
-          />
+            <CardItem
+              key={index}
+              title={info.title}
+              content={info.content}
+              image={info.image}
+              end={info.end}
+            />
         ))}
       </div>
     </>
