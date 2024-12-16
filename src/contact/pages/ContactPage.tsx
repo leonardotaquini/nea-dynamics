@@ -1,7 +1,7 @@
 import Lottie from "react-lottie";
 import { NavbarUI } from "@/components/ui/NavbarUI";
 import { Contact } from "../components/Contact";
-import ContactAnimation from "@/assets/contact-animation2.json";
+import ContactAnimation from "@/assets/contact-animation.json";
 import { Footer } from "@/home/components/Footer";
 
 export const ContactPage = () => {
